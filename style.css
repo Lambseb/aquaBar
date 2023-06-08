@@ -1,0 +1,49 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(70, 69, 69);
+}
+
+/* CSS NAVIGATION BAR */
+.wrapperMain{
+    display: flex;
+    
+}
+.navTop{
+    display: flex;
+    justify-content:space-between;
+}
+.linkNav{
+    padding: 0 10px 0 10px;
+    text-decoration: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+}
+.linkNav, li{
+    list-style-type: none;
+}
+.linkNav:hover{
+    background-color: rgb(129, 22, 3);
+    border-radius: 20px;
+ 
+    transition: 0.5s;
+}
+/* logoSocial style */
+.logoSocial{
+    margin-right: 80px;
+    display: flex;
+    align-items: center;
+}
+.logoLink, img{
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.logoLink img:hover{
+    rotate: 360deg;
+    transition: 2s;
+}
+
+/* CSS FIRST ARTICLE */
+ 
