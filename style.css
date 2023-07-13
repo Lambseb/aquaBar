@@ -1,49 +1,102 @@
-html, body{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Rubik:ital@1&display=swap');
+
+body,html{
     margin: 0;
     padding: 0;
-    background-color: rgb(70, 69, 69);
+    background-color: #fdfdfb;
 }
-
-/* CSS NAVIGATION BAR */
-.wrapperMain{
+.mainBar{
     display: flex;
+    justify-content: space-around;
+    list-style-type: none;
     
 }
-.navTop{
-    display: flex;
-    justify-content:space-between;
-}
-.linkNav{
-    padding: 0 10px 0 10px;
+.mainBar *{
+    padding: 10px;
     text-decoration: none;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: aliceblue;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 25px;
+    transition: ease 1s;
+    color: #6568bd;
 }
-.linkNav, li{
-    list-style-type: none;
+.mainBar *:hover{
+    transform: rotateX(360deg);
+    color: #37a3e6;
 }
-.linkNav:hover{
-    background-color: rgb(129, 22, 3);
-    border-radius: 20px;
- 
-    transition: 0.5s;
+
+/* Aquabar Menu */
+.firstArticle{
+        display: flex;
+
 }
-/* logoSocial style */
-.logoSocial{
-    margin-right: 80px;
+.bannerAdv{
+    background: #6568bd;
+    margin-top:120px;
+    padding: 50px 10px 50px 10px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    color: #fdfdfb;
+    animation: scrollBackGround 0s linear infinite;
+}
+.aquaPresentation{
+    padding-top: 50%;
+    color: #6568bd;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    font-size: 45px;
+}
+.burgerImg{
+    z-index: 1;
+    width: 100vh;
+}
+
+/* Menu complet */
+.saladMenu, .sandMenu, .burgerMenu{
+    width: 50%;
+    height: 100vh;
+    
+}
+.salade{
+    font-family: 'Rubik', sans-serif;
+    color:#6568bd;
     display: flex;
-    align-items: center;
-}
-.logoLink, img{
-    margin-left: 20px;
-    width: 30px;
-    height: 30px;
-}
+    width: 100vw;
+    visibility: visible;
 
-.logoLink img:hover{
-    rotate: 360deg;
-    transition: 2s;
 }
+.tartine{
+    font-family: 'Rubik', sans-serif;
+    color:#6568bd;
+    width: 100vw;
+    display: none;
+}
+.burger{
+    font-family: 'Rubik', sans-serif;
+    color:#6568bd;
+    display: none;
+    width: 100vw;
 
-/* CSS FIRST ARTICLE */
- 
+    
+}
+.menuSlide{
+    display: flex;
+}
+/* KEYFRAMES */ 
+
+@keyframes scrollBackGround {
+    0% {
+      transform: translateX(0%);
+    }
+    33% {
+      transform: translateX(-100%);
+    }
+    66% {
+        transform: translateX(100%);
+      }
+    100% {
+        transform: translateX(0%);
+      }
+  }
+
+
+  /* Keypress SELECTOR */
