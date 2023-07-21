@@ -10,11 +10,12 @@
         <nav class="wrapperMain">
             <ul class="mainBar">
                 <li class="L'aquabar"><a href="#">L'AQUABAR</a></li>
-                <li class="MenuWrapper"><a href="#"> LES MENUS</a></li>
-                <li class="Gallerie"><a href="#"> LES SIROPS</a></li>
+                <li class="MenuWrapper"><a href="#menuTarget"> LES MENUS</a></li>
+                <li class="Gallerie"><a href="#syrupTarget"> LES SIROPS</a></li>
                 <li class=""><a href="#">ENFANTS</a></li>
             </ul>
         </nav>
+    </header>
         <article class="firstArticle">
             <div class="aquarbarTitle">
                 <p class="aquaPresentation">Plongez dans la gourmandise à l'AquaBar : le plaisir culinaire au cœur de l'Aquarelle !"</p>
@@ -22,7 +23,7 @@
                 <img class="burgerImg" src="./img/14588.jpg" alt="burger avec soda et frites !" >
         </article>
         <article class="secondArticle">
-            <button class="btn-slide">Salades</button>
+            <button class="btn-slide" id="menuTarget">Salades</button>
             <!--
             <button class="btn-tartine">Tartines</button>
             <button class="btn-burger">Plats</button>-->
@@ -32,7 +33,7 @@
                     <div>
                         <h4>LES SALADES  base: salade, tomate, oignons grillés, oeuf.</h4>
                         <p><b>Fermière</b>: (emincés de poulet, toasts de chèvre)</p>
-                        <p><b>Crispy</b>: (aiguillaittes de poulet panées, dés de fromage)</p>
+                        <p><b>Crispy</b>: (aiguillettes de poulet panées, dés de fromage)</p>
                         <p><b>Montagnarde</b>: (pomme de terre, jambon sec, toasts de reblochon)</p>
                     </div>
                 </div>
@@ -57,21 +58,71 @@
                         <p><b>Raclette burger</b>: (pain, sauce ketchup/moutarde, cheddar, fromage à raclette, steak, jambon sec, tomate, salade)</p>
                     </div>
                 </div>
+                <div class="plat">
+                    <img src="./img/burger-plat.jpg" class="platMenu" alt="nos savoureux plat servi avec frites!">
+                <div>
+                    <h4>LES PLATS servi avec frites</h4>
+                    <p><b>Steak haché ou steak végétal</b></p>
+                    <p><b>Steak haché à cheval</b>: (Cheddar, oeuf sur le plat)</p>
+                    <p><b>Fish & chips</b></p>
+                    <p><b>aiguillettes de poulet panées</b></p>
+                    <p><b>Audouilettte AAAAAA></b></p>
+                    <p><b>Tapas</b>: 10 pièces</p>
+                </div>
+            </div>
             </div> 
         </article>
-        <section>       
+        <section> <!--Section Syrup-->      
                 <div class="syrupTheme">
                     <p class="bannerAdv">OUVERT DU LUNDI AU DIMANCHE ! </p>   
                 </div>
-            <article class="syrupMain">
-                <div class="syrupScrolling1">*
+            <article class="syrupMain" id="syrupTarget">
+                <div class="monin"><p>NOTRE CHOIX INCROYABLE DE SIROP MONIN™</p>
                 </div>
-                <div class="syrupScrolling2">*
+                <div class="syrupScrolling">
+                    <p>Ananas</p>
+                    <p>Banane Kiwi</p>
+                    <p>Banane verte</p>
+                    <p>Barbe à papa</p>
+                    <p>Bubble gum</p>
+                    <p>Cannelle</p>
+                    <p>Caramel</p>
+                    <p>Cassis</p>
+                    <p>Cerise</p>
+                    <p>Chocolat blanc</p>
+                    <p>Citron vert</p>
+                    <p>Concombre</p>
+                    <p>Curaçao bleu</p>
+                    <p>Fraise</p>
+                    <p>Fraise bonbon</p>
+                    <p>Framboise</p>
+                    <p>Fruit de la passion</p>
+                    <p>Grenadine</p>
+                    <p>Hibiscus</p>
+                </div>                
+            </article>
+            <article class="youngList"><!--Child article-->
+                <div class="childMenu">
+                    <h3>Menu Enfant (jusqu'a 10ans) 7,50€</h3>
+                    <p>
+                        Steak haché / aiguillettes de poulet panées / burger / poisson pané<br>
+                        Frites<br>
+                        Sirop à l'eau ou diabolo<br>
+                        Glace 1 boule ou glace baton ou crêpe ou gaufre ou compote                    
+                    </p>
                 </div>
-                <div class="syrupScrolling3">*
+                <div class="teenagerMenu">
+                    <h3>Menu Ado (jusqu'a 18ans) 11,50€</h3>
+                    <p>
+                        Steak haché / aiguillettes de poulet panées / classic burger<br>
+                        Frites<br>
+                        Sirop à l'eau ou diabolo<br>
+                        Glace 2 boules ou glace baton ou crêpe ou gaufre ou compote                    
+                    </p>
                 </div>
+
+
             </article>
         </section>
-    </header>
-    <script src="/Devgit/Aquabar/script.js"></script>
+    <script src="script.js"></script>
 </body>

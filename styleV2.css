@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Rubik:ital@1&display=swap');
+
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfb;
+}
+.mainBar{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    position: absolute;
+    
+    
+}
+.mainBar *{
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 20px;
+    transition: ease 1s;
+    color: #c0b514;
+}
+.mainBar *:hover{
+    transform: rotateX(360deg);
+    color: #e65a37;
+}
+
+/* Aquabar Menu */
+.firstArticle{
+    background-image:url(./img/kitchen.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
+}
+.aquaPresentation{
+    padding-top: 230px;
+    color: #e6e6f5;
+    font-family: 'Rubik', sans-serif;
+    font-size: 45px;
+}

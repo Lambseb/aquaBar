@@ -15,7 +15,7 @@ body,html{
     padding: 10px;
     text-decoration: none;
     font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     transition: ease 1s;
     color: #6568bd;
 }
@@ -39,10 +39,9 @@ body,html{
     animation: scrollBackGround 0s linear infinite;
 }
 .aquaPresentation{
-    padding-top: 50%;
+    padding-top: 230px;
     color: #6568bd;
     font-family: 'Rubik', sans-serif;
-    text-align: center;
     font-size: 45px;
 }
 .burgerImg{
@@ -51,7 +50,7 @@ body,html{
 }
 
 /* Menu complet */
-.saladMenu, .sandMenu, .burgerMenu{
+.saladMenu, .sandMenu, .burgerMenu, .platMenu{
     width: 50%;
     height: 100vh;
     
@@ -74,9 +73,13 @@ body,html{
     font-family: 'Rubik', sans-serif;
     color:#6568bd;
     display: none;
+    width: 100vw;    
+}
+.plat{
+    font-family: 'Rubik', sans-serif;
+    color:#6568bd;
+    display: none;
     width: 100vw;
-
-    
 }
 .menuSlide{
     display: flex;
@@ -100,3 +103,51 @@ body,html{
 
 
   /* Keypress SELECTOR */
+
+
+  /* scrolling syrup menu */
+  .syrupMain{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Rubik', sans-serif;
+    color:#37a3e6;
+    box-sizing: border-box;
+    height: 300px;
+    overflow: hidden;
+  }
+  .monin{
+    font-family: 'Rubik', sans-serif;
+    color: #6568bd;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    font-size:35px
+
+  }
+    .syrupScrolling{
+    animation: scrollSy 10s infinite linear;
+    white-space: nowrap;
+    text-align: center;
+     font-family: 'Rubik', sans-serif;
+    color: #6568bd;
+
+    }
+    @keyframes scrollSy{
+        0% {
+        transform:translateY(0);
+        }
+         50%{
+        transform:translateY(-50%);
+         }
+         100%{
+        transform: translateY(0);
+         }
+    }
+
+/* Young Menu CSS */
+.youngList{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Rubik', sans-serif;
+    color: #6568bd;
+}

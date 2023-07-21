@@ -33,22 +33,32 @@ const btnBurger = document.querySelector(".btn-burger");
 const saladeSlide = document.querySelector(".salade");
 const tartineSlide = document.querySelector(".tartine");
 const burgerSlide = document.querySelector(".burger");
+const platSlide = document.querySelector(".plat");
 btnSlide.addEventListener("click", () => {
     if (state === 0) {
         tartineSlide.style.display ="none";
         saladeSlide.style.display ="flex";
         burgerSlide.style.display ="none";
+        platSlide.style.display ="none";
         state = 1;
     } else if (state === 1) {
         burgerSlide.style.display ="none"
         tartineSlide.style.display ="flex";
         saladeSlide.style.display ="none";
+        platSlide.style.display ="none";
         state = 2;
     } else if (state === 2) {
         saladeSlide.style.display="none";
         tartineSlide.style.display ="none";
         burgerSlide.style.display ="flex";
-        state = 0;
-    }
+        platSlide.style.display ="none";
+        state = 3;
+    } else if (state === 3) {
+    saladeSlide.style.display="none";
+    tartineSlide.style.display ="none";
+    burgerSlide.style.display ="none";
+    platSlide.style.display ="flex";
+    state = 0;
+}
 });
 
