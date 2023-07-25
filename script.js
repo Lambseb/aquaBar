@@ -1,3 +1,10 @@
+var showHeight = window.innerHeight;
+var showWidth = window.innerWidth;
+console.log(showHeight, showWidth);
+
+
+// script show list menu
+
 
 /* crée les const pour chaque bouton !!
 
@@ -24,7 +31,7 @@ btnBurger.addEventListener("click", () => {
     burgerSlide.style.display = "flex";
     tartineSlide.style.display = "none";
 })
-*/
+
 const btnSlide = document.querySelector(".btn-slide");
 var state = 1;
 const btnSalad = document.querySelector(".btn-salad");
@@ -61,4 +68,4 @@ btnSlide.addEventListener("click", () => {
     state = 0;
 }
 });
-
+*/

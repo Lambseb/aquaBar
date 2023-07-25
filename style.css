@@ -1,153 +1,254 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Rubik:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaldi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Rubik:ital@1&display=swap'); /* font: 'Jaldi', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jaldi&display=swap');
+
+
+@keyframes scrollSy{
+    from,
+    to {
+    transform:translateY(0);
+    }
+    50%{
+    transform:translateY(-100%);
+     }
+     100%{
+    transform: translateY(0);
+     }
+}
+@keyframes HueColor {
+    from,
+    to{
+    color: hsl(360, 65%, 45%);
+    }
+    20% {
+    color: hsl(36, 80%, 45%);
+    }
+    40% {
+    color: hsl(51, 100%, 52%);
+    }
+    60% {
+    color: hsl(72, 75%, 35%);
+    }
+    80% {
+    color: hsl(184, 100%, 52%);
+      }
+    33% {
+    color: hsl(36, 80%, 45%);
+    }
+}
 
 body,html{
     margin: 0;
     padding: 0;
-    background-color: #fdfdfb;
+    background-image: url(./img/wallpapermainpage.jpg);
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+    user-select: none;
+
+}
+.wrapperMain{
+    background-image:url(./img/L-Aquarelle-3.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: Center;
+    max-width: 100vw;
+    height: 80vh;
+    margin-bottom: 60px;
 }
 .mainBar{
+    margin-top: 25vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     list-style-type: none;
-    
+    padding-left: 0;
+}
+.call_icon{ /* icone calling  */
+    z-index: 2;
+    position:fixed;
+    display: flex;
+    left: 1rem;
+    padding: 20px 20px 20px 20px;    
+    background-color: rgb(237, 194, 25);
+    border-radius: 40px;
+    margin-top: 88vh;
+    transition: 1s ease;
+}
+.call_icon:hover{
+    padding-right: 7rem;
+    transition: 1s ease;
+
+}
+.title_main{
+    text-align: center;
+    margin: 0;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgb(189, 123, 23);
+    font-size: 50px;
 }
 .mainBar *{
-    padding: 10px;
+    display: flex;
     text-decoration: none;
-    font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 20px;
-    transition: ease 1s;
-    color: #6568bd;
-}
-.mainBar *:hover{
-    transform: rotateX(360deg);
-    color: #37a3e6;
-}
+    margin-left: 30px;
 
+}
+.laquabarWrapper{
+    margin-left: -30px;
+}
+.mainBar a{
+    font-family:'Bebas Neue', sans-serif;
+    color:#ffffff;
+    font-size: 30px;
+	text-decoration: none;
+	transition: .25s ease;
+    box-shadow: 0 2px 0 0 currentColor;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+
+}
+.mainBar a:hover {
+    color: rgb(238, 121, 5);
+    box-shadow: 0 6px 0 0 currentColor;
+    transition: 1s ease;
+}
 /* Aquabar Menu */
 .firstArticle{
-        display: flex;
-
+    display: flex;
+    max-height: 557px;
 }
-.bannerAdv{
-    background: #6568bd;
-    margin-top:120px;
-    padding: 50px 10px 50px 10px;
-    text-align: center;
-    font-family: 'Rubik', sans-serif;
-    color: #fdfdfb;
-    animation: scrollBackGround 0s linear infinite;
-}
-.aquaPresentation{
-    padding-top: 230px;
-    color: #6568bd;
-    font-family: 'Rubik', sans-serif;
-    font-size: 45px;
-}
-.burgerImg{
-    z-index: 1;
+.picture_main{
     width: 100vh;
+    z-index: -2;
+    height: 100vw;
 }
-
 /* Menu complet */
-.saladMenu, .sandMenu, .burgerMenu, .platMenu{
-    width: 50%;
-    height: 100vh;
-    
-}
-.salade{
-    font-family: 'Rubik', sans-serif;
-    color:#6568bd;
-    display: flex;
-    width: 100vw;
-    visibility: visible;
-
-}
-.tartine{
-    font-family: 'Rubik', sans-serif;
-    color:#6568bd;
-    width: 100vw;
-    display: none;
-}
-.burger{
-    font-family: 'Rubik', sans-serif;
-    color:#6568bd;
-    display: none;
-    width: 100vw;    
-}
-.plat{
-    font-family: 'Rubik', sans-serif;
-    color:#6568bd;
-    display: none;
-    width: 100vw;
-}
 .menuSlide{
-    display: flex;
+    background-image: url(./img/wallpaperfood.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
 }
-/* KEYFRAMES */ 
-
-@keyframes scrollBackGround {
-    0% {
-      transform: translateX(0%);
-    }
-    33% {
-      transform: translateX(-100%);
-    }
-    66% {
-        transform: translateX(100%);
-      }
-    100% {
-        transform: translateX(0%);
-      }
-  }
-
-
+.salade { grid-area: 1 / 1 / 2 / 2; }
+.text_salade { grid-area: 2 / 1 / 3 / 2; }
+.tartine { grid-area: 2 / 2 / 3 / 3; }
+.text_tartine { grid-area: 1 / 2 / 2 / 3; }
+.burger { grid-area: 1 / 3 / 2 / 4; }
+.text_burger { grid-area: 2 / 3 / 3 / 4; }
+.plat { grid-area: 2 / 4 / 3 / 5; }
+.text_plat { grid-area: 1 / 4 / 2 / 5; }
+.menuSlide div{
+    text-align: center;
+    height: 40vh;
+    width: 20vw;
+}
+.menuSlide img{
+    overflow: hidden;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    transition: 2s;
+}
+.menuSlide img:hover{
+    scale: 1.1;
+    transition: 2s;
+}
+.menuSlide, h4 p {
+    overflow: hidden;
+    color: #ffffff;
+    font-size: 20px;
+    font-family:'Rubik', sans-serif;
+    text-shadow: 1px 1px rgb(68, 44, 7);
+}
   /* Keypress SELECTOR */
 
 
   /* scrolling syrup menu */
   .syrupMain{
+    background-image: url(./img/dark-blue-wave.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    margin-top: 60px;
     display: flex;
     justify-content: space-around;
-    font-family: 'Rubik', sans-serif;
-    color:#37a3e6;
-    box-sizing: border-box;
+    font-family:'Bebas Neue', sans-serif;
     height: 300px;
-    overflow: hidden;
   }
   .monin{
-    font-family: 'Rubik', sans-serif;
-    color: #6568bd;
-    width: 50vw;
-    display: flex;
-    align-items: center;
-    font-size:35px
+    text-align: center;
+    font-family:'Bebas Neue', sans-serif;
+    color: #ffffff;
+    text-shadow: 0.5px 0.5px rgb(255, 5, 5);
+    font-size:35px;
+  }
+  
+  .para_show{
+    font-size:1.5rem;
+  }
+  .target_to_menu{
+    font-size: 1.3rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-family:'Bebas Neue', sans-serif;
 
   }
-    .syrupScrolling{
-    animation: scrollSy 10s infinite linear;
-    white-space: nowrap;
+  /*
+  .menu_drink{
+    margin-top: 100px;
+    width: 200px;
+    font-family:'Bebas Neue', sans-serif;
+    overflow:hidden;
+    font-size: 20px;
+    height: 25px;
     text-align: center;
-     font-family: 'Rubik', sans-serif;
-    color: #6568bd;
-
-    }
-    @keyframes scrollSy{
-        0% {
-        transform:translateY(0);
-        }
-         50%{
-        transform:translateY(-50%);
-         }
-         100%{
-        transform: translateY(0);
-         }
-    }
-
-/* Young Menu CSS */
-.youngList{
-    display: flex;
-    justify-content: space-around;
+    background-color: rgb(255, 248, 248);
+    border-radius: 10px;
+  }
+  .menu_drink:hover{
+    transition: 1s ease;
+    height: 100px;
+    overflow: visible;
+  }
+  .menu_drink a{
+    color: #BA704F;
     font-family: 'Rubik', sans-serif;
-    color: #6568bd;
+    text-decoration: none;
+  }
+  .menu_drink a:hover{
+    transition: 5s ease;
+  }
+    .syrup_main{
+    font-size: 20px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    animation: scrollSy 10s infinite linear, HueColor 10s infinite;
+
+}
+  
+/* Young Menu CSS */    
+
+.child_menu{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Rubik', sans-serif;
+    color: #ffffff;
+    text-shadow: 0.5px 0.5px rgb(0, 0, 0);
+
+}
+.picture_child{
+    width: 20rem;
+    height: 20rem;
+}
+.text_child_one, .text_child_two{
+    width: 20vw;
 }
